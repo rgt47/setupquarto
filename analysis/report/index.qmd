@@ -93,7 +93,7 @@ and continuous integration pipeline.
 I am documenting my learning process here. If you spot
 errors or have better approaches, please let me know.
 
-![A workspace ready for reproducible publishing.](media/images/placeholder-coffee-04.jpg){.img-fluid}
+![A workspace ready for reproducible publishing.](media/images/ambiance1.png){.img-fluid}
 
 # What is a Reproducible Blog Post?
 
