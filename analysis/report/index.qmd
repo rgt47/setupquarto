@@ -1,8 +1,6 @@
 ---
 title: "Reproducible Blog Posts with ZZCOLLAB: A Quarto
   Workflow"
-subtitle: "Treating each blog post as a standalone
-  reproducible research project"
 author: "Ronald 'Ryy' G. Thomas"
 date: "2026-02-10"
 categories: [quarto, r, docker, reproducibility, zzcollab]
@@ -28,7 +26,7 @@ format:
 
 ![A Quarto-themed workspace representing reproducible
 document authoring](media/images/hero.jpg){.img-fluid
-width=80%}
+width=80% fig-align="center"}
 
 *Quarto provides the rendering engine; ZZCOLLAB provides
 the reproducible scaffolding around it.*
