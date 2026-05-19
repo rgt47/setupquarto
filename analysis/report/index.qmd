@@ -51,11 +51,11 @@ or refusing to compile entirely.
 
 The conventional response is to freeze rendered output
 and accept that the source code is a snapshot rather
-than a living document. This post describes an
-alternative: treating each blog post as a standalone
-ZZCOLLAB reproducible research project, complete with
-its own Docker environment, pinned package versions,
-and continuous integration pipeline.
+than a living document. We describe an alternative:
+treating each blog post as a standalone ZZCOLLAB
+reproducible research project, complete with its own
+Docker environment, pinned package versions, and
+continuous integration pipeline.
 
 ## Motivations
 
@@ -99,10 +99,9 @@ A reproducible blog post is a technical document whose
 computational results can be regenerated from source by
 anyone, on any machine, at any point in the future. It
 goes beyond simply sharing code alongside prose.
-Concretely, it means that a reader can clone a single
-repository, build a Docker container, and produce an
-identical HTML document without installing anything
-beyond Docker itself.
+Concretely, a reader can clone a single repository,
+build a Docker container, and produce an identical HTML
+document without installing anything beyond Docker itself.
 
 The distinction matters because most technical blog
 posts are reproducible only in theory. They share code
@@ -136,12 +135,12 @@ through trial and error.
 Each blog post becomes a self-contained project with
 five components:
 
-1. **Dockerfile** --- defines the computational
+1. **Dockerfile**: defines the computational
    environment
-2. **renv.lock** --- pins exact R package versions
-3. **.Rprofile** --- configures R session behavior
-4. **Source code** --- analysis scripts and narrative
-5. **Data** --- raw and derived datasets
+2. **renv.lock**: pins exact R package versions
+3. **.Rprofile**: configures R session behavior
+4. **Source code**: analysis scripts and narrative
+5. **Data**: raw and derived datasets
 
 A collaborator (or the author, six months later) can
 clone the repository, run
@@ -293,7 +292,7 @@ The site-level `_quarto.yml` defines navigation,
 theme, and rendering defaults. It does not enumerate
 posts; the listing glob handles discovery
 automatically. Adding a new post requires only creating
-the lead-in directory and project --- no modification
+the lead-in directory and project, with no modification
 to `_quarto.yml` or any other site-level file.
 
 # GitHub Integration
@@ -303,13 +302,13 @@ to `_quarto.yml` or any other site-level file.
 Each blog post is a standalone GitHub repository under
 the `rgt47` organization. This design provides:
 
-- **Independent version history** --- each post tracks
+- **Independent version history**: each post tracks
   its own commits without polluting a monorepo log
-- **Isolated CI/CD** --- a failing build in one post
+- **Isolated CI/CD**: a failing build in one post
   does not block others
-- **Focused collaboration** --- a contributor clones
+- **Focused collaboration**: a contributor clones
   only the post they are reviewing
-- **Independent dependency management** --- each post
+- **Independent dependency management**: each post
   pins its own package versions
 
 ## CI/CD Pipeline
@@ -515,8 +514,8 @@ depending on the rendering context:
 - From root: `setupquarto/figures/plot.png` (works via
   root symlink)
 - From `analysis/report/`:
-  `analysis/report/figures/plot.png` (fails --- no
-  such directory)
+  `analysis/report/figures/plot.png` (fails: no such
+  directory)
 
 The report-level symlinks make both contexts resolve
 to `analysis/figures/plot.png`.
@@ -844,21 +843,19 @@ any post can be cloned and reproduced by anyone, at
 any time, without guessing at package versions or
 system dependencies.
 
-Main takeaways:
-
-- The lead-in pattern (`NN-name/name/`) cleanly
-  separates git repositories from archival material.
-- Dual-layer relative symlinks reconcile Quarto's
-  discovery mechanism with the rrtools/ZZCOLLAB
-  directory convention.
-- Quarto's listing glob does not follow symlinked
-  directories --- this constraint drove the entire
-  architecture.
-- The five pillars (Dockerfile, renv.lock, .Rprofile,
-  source code, data) provide a complete
-  reproducibility contract for each post.
-- CI/CD catches breakage on push rather than months
-  later when a reader reports a problem.
+In conclusion, five points merit emphasis. First, the
+lead-in pattern (`NN-name/name/`) cleanly separates
+git repositories from archival material. Second,
+dual-layer relative symlinks reconcile Quarto's
+discovery mechanism with the rrtools/ZZCOLLAB
+directory convention. Third, Quarto's listing glob
+does not follow symlinked directories: this
+constraint drove the entire architecture. Fourth, the
+five pillars (Dockerfile, renv.lock, .Rprofile,
+source code, data) provide a complete reproducibility
+contract for each post. Fifth, CI/CD catches breakage
+on push rather than months later when a reader
+reports a problem.
 
 # Appendix: rrtools as the Predecessor Pattern
 
@@ -948,14 +945,14 @@ construct's recommended implementation of that tier in
 
 - [Template Post: The ZZCOLLAB Blog Post
   Exemplar](/posts/39-templatepost/templatepost/)
-  --- the reference implementation for this workflow
+  (the reference implementation for this workflow)
 - [Configure the Command Line for Data Science
   Development](/posts/01-configtermzsh/configtermzsh/)
-  --- terminal and shell setup for the development
-  environment
+  (terminal and shell setup for the development
+  environment)
 - [Setting Up Dotfiles on
   GitHub](/posts/24-setupdotfilesongithub/setupdotfilesongithub/)
-  --- configuration management for development tools
+  (configuration management for development tools)
 
 ### Key Resources
 
