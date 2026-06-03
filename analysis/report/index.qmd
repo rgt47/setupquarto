@@ -11,7 +11,7 @@ description: |
   workflow I built to treat each blog post as a standalone
   ZZCOLLAB reproducible research project with Docker,
   renv, and CI/CD.
-image: "media/images/hero.jpg"
+image: "media/images/hero.png"
 document-type: "blog"
 draft: false
 execute:
@@ -27,7 +27,7 @@ cluster-order: 1
 ---
 
 ![A Quarto-themed workspace representing reproducible
-document authoring](media/images/hero.jpg){.img-fluid
+document authoring](media/images/hero.png){.img-fluid
 width=80% fig-align="center"}
 
 *Quarto provides the rendering engine; ZZCOLLAB provides
