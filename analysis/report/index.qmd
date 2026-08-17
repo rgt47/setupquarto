@@ -1,28 +1,11 @@
 ---
-title: 'Reproducible Blog Posts with ZZCOLLAB: A Quarto Workflow'
+title: "Reproducible Blog Posts with ZZCOLLAB: A Quarto Workflow"
 author: "Ronald G. Thomas"
-date: '2026-02-10'
-categories:
-- quarto
-- r
-- docker
-- reproducibility
-- zzcollab-compendia
-description: 'I did not really appreciate how fragile technical blog
-
-  posts are until one of my own stopped rendering six
-
-  months after publication. This post documents the
-
-  workflow I built to treat each blog post as a standalone
-
-  ZZCOLLAB reproducible research project with Docker,
-
-  renv, and CI/CD.
-
-  '
-image: media/images/hero.png
-document-type: blog
+date: "2026-02-10"
+categories: [quarto, r, docker, reproducibility, zzcollab-compendia]
+description: "I did not really appreciate how fragile technical blog posts are until one of my own stopped rendering six months after publication. This post documents the workflow I built to treat each blog post as a standalone ZZCOLLAB reproducible research project with Docker, renv, and CI/CD."
+image: "media/images/hero.png"
+document-type: "blog"
 draft: true
 execute:
   echo: true
@@ -99,7 +82,7 @@ continuous integration pipeline.
 I am documenting my learning process here. If you spot
 errors or have better approaches, please let me know.
 
-![A workspace ready for reproducible publishing.](media/images/ambiance1.png){.img-fluid}
+![A workspace ready for reproducible publishing.](media/images/ambiance1.png){.img-fluid height=3.5in}
 
 # What is a Reproducible Blog Post?
 
@@ -444,7 +427,7 @@ setupquarto/                     # git repo root
 ```
 
 ![A quiet study environment for focused
-work](media/images/ambiance2.png){.img-fluid}
+work](media/images/ambiance2.png){.img-fluid height=3.5in}
 
 *Reproducible workflows require careful architecture,
 much like building a well-organized library.*
@@ -716,7 +699,7 @@ The post's `.qmd` content is unchanged; only the
 reproducibility scaffolding is removed.
 
 ![UCSD Geisel Library, a space for focused
-research](media/images/ambiance3.png){.img-fluid}
+research](media/images/ambiance3.png){.img-fluid height=3.5in}
 
 *Academic research and technical writing share a common
 requirement: disciplined organization of complex
