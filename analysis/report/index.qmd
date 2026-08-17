@@ -1,6 +1,6 @@
 ---
 title: 'Reproducible Blog Posts with ZZCOLLAB: A Quarto Workflow'
-author: Ronald G. Thomas
+author: "Ronald G. Thomas"
 date: '2026-02-10'
 categories:
 - quarto
@@ -28,10 +28,6 @@ execute:
   echo: true
   warning: false
   message: false
-format:
-  html:
-    code-fold: false
-    code-tools: false
 cluster: zzcollab-compendia
 cluster-order: 1
 ---
