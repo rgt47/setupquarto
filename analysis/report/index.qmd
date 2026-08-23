@@ -926,7 +926,7 @@ migration to zzcollab is mechanical (copy the project's
 and reversible. The two patterns coexist: a project on
 rrtools still satisfies the compendium-tier requirements
 of the Workflow Construct described in
-[post 52](/posts/52-workflow-construct/); zzcollab is the
+[A Workflow Construct for the Modern Data Scientist](../wf-construct-overview-anchor/); zzcollab is the
 construct's recommended implementation of that tier in
 2026, but rrtools remains a valid alternative.
 
@@ -934,15 +934,15 @@ construct's recommended implementation of that tier in
 
 ### Related Posts
 
-- [Template Post: The ZZCOLLAB Blog Post
-  Exemplar](/posts/39-templatepost/templatepost/)
+- [Blog Post
+  Template](../zc-blog-post-template/)
   (the reference implementation for this workflow)
-- [Configure the Command Line for Data Science
-  Development](/posts/01-configtermzsh/configtermzsh/)
+- [Unix Command-Line Workspace Setup for Data Science
+  Development](../wf-unix-workspace-config/)
   (terminal and shell setup for the development
   environment)
-- [Setting Up Dotfiles on
-  GitHub](/posts/24-setupdotfilesongithub/setupdotfilesongithub/)
+- [Multi-Laptop macOS
+  Bootstrap](../wf-multi-laptop-dotfiles-bootstrap/)
   (configuration management for development tools)
 
 ### Key Resources
