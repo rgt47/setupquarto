@@ -82,7 +82,7 @@ continuous integration pipeline.
 I am documenting my learning process here. If you spot
 errors or have better approaches, please let me know.
 
-![A workspace ready for reproducible publishing.](media/images/ambiance1.png){.img-fluid height=3.5in}
+![A wooden puzzle piece resting exactly in the seam between two halves of a map: narrative and code fitting together into one document.](media/images/ambiance1.jpg){.img-fluid height=3.5in}
 
 # What is a Reproducible Blog Post?
 
@@ -426,8 +426,8 @@ setupquarto/                     # git repo root
 +-- media -> analysis/media
 ```
 
-![A quiet study environment for focused
-work](media/images/ambiance2.png){.img-fluid height=3.5in}
+![Three glass jars of different colored liquids beside an empty jar and funnel: combining R, prose, and output into one
+compendium](media/images/ambiance2.jpg){.img-fluid height=3.5in}
 
 *Reproducible workflows require careful architecture,
 much like building a well-organized library.*
