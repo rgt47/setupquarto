@@ -707,7 +707,7 @@ materials.*
 
 # What Did We Learn?
 
-## Lessons Learnt
+## Lessons Learned
 
 **Conceptual Understanding:**
 
@@ -853,7 +853,7 @@ reports a problem.
 ZZCOLLAB did not appear in a vacuum. The compendium pattern
 documented above is a refinement of the **rrtools** package
 introduced by Marwick, Boettiger, and Mullen (2018), which
-in turn operationalised the 'research compendium' construct
+in turn operationalized the 'research compendium' construct
 introduced by Gentleman and Temple Lang (2007). This
 appendix preserves the rrtools framing for readers who
 encounter the older pattern in the literature or in
