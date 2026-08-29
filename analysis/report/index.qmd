@@ -6,7 +6,7 @@ categories: [quarto, r, docker, reproducibility, zzcollab-compendia]
 description: "I did not really appreciate how fragile technical blog posts are until one of my own stopped rendering six months after publication. This post documents the workflow I built to treat each blog post as a standalone ZZCOLLAB reproducible research project with Docker, renv, and CI/CD."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
