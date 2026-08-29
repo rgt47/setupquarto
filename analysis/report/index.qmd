@@ -435,10 +435,10 @@ much like building a well-organized library.*
 # The Symlink Architecture
 
 The project uses two layers of symlinks to reconcile
-three competing requirements: (1) Quarto expects
+three competing requirements. First, Quarto expects
 `index.qmd` at the directory root it discovers via
-glob, (2) the rrtools/ZZCOLLAB convention places the
-narrative at `analysis/report/index.qmd`, and (3)
+glob. Second, the rrtools/ZZCOLLAB convention places the
+narrative at `analysis/report/index.qmd`. Third,
 relative paths in the `.qmd` file must resolve to
 `analysis/data/`, `analysis/figures/`, and
 `analysis/media/` regardless of which directory Quarto
@@ -863,13 +863,15 @@ adds.
 ## The problem rrtools (and zzcollab) tried to solve
 
 When sharing R code with a collaborator, several
-predictable failure modes arise: different R versions on
-each machine; mismatched package versions; missing system
-dependencies (pandoc, LaTeX, image libraries); missing
-supplementary files referenced by the analysis (bibliography
-files, LaTeX preambles, datasets, images); and
-collaborator-specific R startup configurations
-(`.Rprofile`, `.Renviron`).
+predictable failure modes arise:
+
+- Different R versions on each machine
+- Mismatched package versions
+- Missing system dependencies (pandoc, LaTeX, image libraries)
+- Missing supplementary files referenced by the analysis
+  (bibliography files, LaTeX preambles, datasets, images)
+- Collaborator-specific R startup configurations
+  (`.Rprofile`, `.Renviron`)
 
 A real-world scenario unfolds like this:
 
